@@ -25,10 +25,12 @@ module.exports = defineConfig({
   reporter: [
     ['list'],
     ['@estruyf/github-actions-reporter', {
-      title: 'MVCP Test Report',
+      title: '',
       useDetails: true,
-      showError: true
-    }]
+      showError: true,
+      showAnnotations: true,
+    }],
+    ['html', { open: 'never' }] 
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   timeout: 60000, // Increase timeout to 60 seconds
