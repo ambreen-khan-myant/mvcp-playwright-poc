@@ -21,7 +21,15 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  // reporter: 'html', 
+  reporter: [
+    ['list'],
+    ['@estruyf/github-actions-reporter', {
+      title: 'MVCP Test Report',
+      useDetails: true,
+      showError: true
+    }]
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   timeout: 60000, // Increase timeout to 60 seconds
   use: {

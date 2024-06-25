@@ -28,6 +28,17 @@ To run the GitHub action morkflow manually:
 4. Click on "Run workflow" dropdown button.
 5. Choose the branch you want to run the workflow on and click "Run workflow".
 
+![alt text](docs/images/run-workflow.png)
+
+## Viewing the HTML Report
+In the Artifacts section click on the playwright-report to download your report in the format of a zip file.
+
+![alt text](docs/images/html-report.png)
+
+Next, extract the zip file & double click on the index.html file. This will open the latest report in your default browser.
+
+Alternatively, first, extract the zip in a folder that already has Playwright installed. Using the command line change into the directory where the report is and use npx playwright show-report followed by the name of the extracted folder. This will serve up the report and enable you to view it in your browser.
+
 ## Data Handling: 
 
 ### Data handled using ENV File
