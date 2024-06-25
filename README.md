@@ -13,7 +13,7 @@
 ### Step 2: Get the repo
 Clone the repo on your local machine.
 
-## Step 2: Install dependencies
+### Step 3: Install dependencies
 Install the dependencies by running the below comannd:
 ```sh
 npm install
