@@ -27,3 +27,24 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+
+  notify-slack:
+    needs: test
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Download Playwright Report Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: playwright-report
+
+      - name: Notify Slack
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: qa-avengers
+          SLACK_COLOR: '#FF0000'
+          SLACK_MESSAGE: 'Playwright Test Report: <URL to your report or artifact>'
+          SLACK_TITLE: 'Playwright Test Execution Report'
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}      
+
+          
