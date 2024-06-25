@@ -19,6 +19,15 @@ Install the dependencies by running the below comannd:
 npm install
 ```
 
+### Running the tests on demand
+To run the GitHub action morkflow manually:
+
+1. Go to your GitHub repository.
+2. Click on the "Actions" tab.
+3. Find the "Playwright Tests" workflow.
+4. Click on "Run workflow" dropdown button.
+5. Choose the branch you want to run the workflow on and click "Run workflow".
+
 ## Data Handling: 
 
 ### Data handled using ENV File
