@@ -1,0 +1,10 @@
+{
+    "urls": {
+      "eventLogs": "https://scwp.dev.skiinserver.com/event-logs",
+      "organization": "https://scwp.dev.skiinserver.com/my-organization",
+      "patients": "https://scwp.dev.skiinserver.com/patient-list",
+      "userManuals": "https://myanthealth.com/support-article/user-manuals/"
+
+    }
+  }
+  
