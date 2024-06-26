@@ -69,6 +69,6 @@ jobs:
         env:
           SLACK_CHANNEL: qa-avengers
           SLACK_COLOR: '#FF0000'
-          SLACK_MESSAGE: 'Playwright Test Report: playwright-report/'
+          SLACK_MESSAGE: 'Playwright Test Report: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
           SLACK_TITLE: 'Playwright Test Execution Report'
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
