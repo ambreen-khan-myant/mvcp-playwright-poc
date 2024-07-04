@@ -4,11 +4,11 @@
 
 ### Step 1: Configure your environment
 
-[VS Code](https://code.visualstudio.com/)
-[Node](https://nodejs.org/en)
-[Git](https://git-scm.com/download/mac)
-[Homebrew](https://brew.sh/)
-[Playwright extension (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
+* [VS Code](https://code.visualstudio.com/)
+* [Node](https://nodejs.org/en)
+* [Git](https://git-scm.com/download/mac)
+* [Homebrew](https://brew.sh/)
+* [Playwright extension (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
 
 ### Step 2: Get the repo
 Clone the repo on your local machine.
