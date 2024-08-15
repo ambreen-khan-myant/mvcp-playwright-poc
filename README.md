@@ -19,7 +19,26 @@ Install the dependencies by running the below comannd:
 npm install
 ```
 
-### Running the tests on demand
+### Step 4: Install Playwright
+If you are running the tests for the first time, please run the following command to download the browsers (we'll be running the test on Chromium, Firefox & Safari): 
+```
+npx playwright install
+```
+
+### Running the tests locally
+Now you are ready to run the tests on your local machine. Run the below command on your terminal:
+
+```
+npx playwright test --headed
+```
+
+You can also run the tests in the headless mode:
+
+```
+npx playwright test
+```
+
+### Running the tests on demand using GitHub Actions
 To run the GitHub action morkflow manually:
 
 1. Go to your GitHub repository.
@@ -29,6 +48,11 @@ To run the GitHub action morkflow manually:
 5. Choose the branch you want to run the workflow on and click "Run workflow".
 
 ![alt text](docs/images/run-workflow.png)
+
+## Viewing the test summary
+After the test execution is complete, you can view the test summary by clicking on the summary link in the left navigation menu.
+
+![alt text](docs/images/test-summary.png)
 
 ## Viewing the HTML Report
 In the Artifacts section click on the playwright-report to download your report in the format of a zip file.
