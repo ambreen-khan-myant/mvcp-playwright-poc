@@ -57,9 +57,11 @@ After the test execution is complete, you can view the test summary by clicking 
 ## Viewing the HTML Report
 In the Artifacts section click on the playwright-report to download your report in the format of a zip file.
 
-![alt text](docs/images/html-report.png)
+![alt text](docs/images/download-report.png)
 
 Next, extract the zip file & double click on the index.html file. This will open the latest report in your default browser.
+
+![alt text](docs/images/html-report.png)
 
 Alternatively, first, extract the zip in a folder that already has Playwright installed. Using the command line change into the directory where the report is and use npx playwright show-report followed by the name of the extracted folder. This will serve up the report and enable you to view it in your browser.
 
